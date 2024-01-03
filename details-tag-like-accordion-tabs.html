@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Using Details Tag as an Accordion with out JS</title>
+    <style>
+      details {
+        border: 1px solid #aaa;
+        border-radius: 4px;
+        padding: 0.5em 0.5em 0;
+      }
+      
+      summary {
+        font-weight: bold;
+        margin: -0.5em -0.5em 0;
+        padding: 0.5em;
+      }
+      
+      details[open] {
+        padding: 0.5em;
+      }
+      
+      details[open] summary {
+        border-bottom: 1px solid #aaa;
+        margin-bottom: 0.5em;
+      }
+    </style>
+  </head>
+  <body>
+	  <details name="nada"> <-- la propiedad name le permite asignar solamente la apertura de un details -->
+      <summary>Details</summary>
+      Something small enough to escape casual notice.
+    </details>
+    <details name="nada">
+      <summary>Details</summary>
+      Something small enough to escape casual notice.
+    </details>
+    <details name="nada">
+      <summary>Details</summary>
+      Something small enough to escape casual notice.
+    </details>
+  </body>
+</html>
